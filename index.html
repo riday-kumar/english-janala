@@ -128,6 +128,25 @@
       ></div>
     </section>
 
+    <!-- search field -->
+    <section class="flex justify-center pt-5">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            
+            <input type="text" id="input-search" placeholder="Search Vocabulary Now" required />
+          </label>
+          
+        </div>
+        <button id="btn-search" class="btn btn-primary join-item">Search</button>
+      </div>
+    </section>
+
+    <!-- loading spinner -->
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
+
     <!-- per lesson Vocabularies -->
     <section class="my-16 w-11/12 mx-auto p-8 bg-[#F8F8F8] rounded-lg">
       <div class="grid grid-cols-3 gap-5" id="showLevelWord">
@@ -137,7 +156,8 @@
         </div>
       </div>
     </section>
-    <!-- modal box -->
+
+    <!-- modal box for showing word detail -->
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box">
         <div
